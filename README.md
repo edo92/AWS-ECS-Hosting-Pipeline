@@ -1,1 +1,0 @@
-# AWS-ECS-Hosting-Pipeline
