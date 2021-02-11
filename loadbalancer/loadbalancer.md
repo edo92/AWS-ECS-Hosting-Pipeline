@@ -1,15 +1,18 @@
 # Create Load Balancer
+
 - Image result for aws what is load balancer for A load balancer serves as the single point of contact for clients. The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones. This increases the availability of your application. You add one or more listeners to your load balancer.
 
 <br/>
 
-## Prerequisites 
+## Prerequisites
+
 - [VPC](https://github.com/cyber-netics/testX/blob/main/.assets/vpc/vpc.md#aws-vpc-virtual-private-network)
-- [Security Groups](https://github.com/cyber-netics/testX/blob/main/.assets/securitygroup/securitygroup.md#security-security-groups) 
+- [Security Groups](https://github.com/cyber-netics/testX/blob/main/.assets/securitygroup/securitygroup.md#security-security-groups)
 
 <br/>
 
 ## Steps
+
 <table align="center">
   <tr>
     <th align="center">
@@ -22,7 +25,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/cyber-netics/testX/blob/main/.assets/ecs/images/ecs-cluster-template.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/loadbalancer.md#create-load-balancer"
         >Create Load Balancer</a
       >
       <pre>  1. Select Application Load Balancer</pre>
@@ -40,7 +43,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/loadbalancer.md#configure-routing-target-group"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/loadbalancer.md#configure-routing-target-group"
         >Configure Routing Target Group</a
       >
       <pre>  1. Configure Target Group Routing, Name TG1</pre>
@@ -55,7 +58,8 @@
 <br/>
 <br/>
 
-## Load Balancer Configuration
+## Create Load Balancer
+
 - **`Create Load Balancer In EC2 Section (Naviate AWS to EC2, Select Load Balancer Tab)`**
   <p align="center">
     <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-dashboard.png" height="450px"/>
@@ -69,6 +73,8 @@
   </p>
 
 <br/>
+
+## Load Balancer Configuration
 
 - **`Select Name For Load Balancer`**
   <p>
@@ -106,6 +112,7 @@
 <br/>
 
 ### Configure Routing Target Group
+
 - **`Configure Load Balancer Target Group. (Target groups listen to specific port)`**
   <p>
     <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-target-group.png"/>
@@ -151,6 +158,5 @@
 ---
 
 <br/>
-
 
 ## Next up: [Create ECS Task Definition](https://github.com/cyber-netics/testX/blob/main/.assets/ecs/ecstaskdef.md)
