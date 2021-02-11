@@ -30,7 +30,7 @@
     </td>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securityrole/securityrole.md#security-roles"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securityrole/securityrole.md#security-role-for-codebuild"
         >   1. Security Roles</a
       >
     </td>
@@ -38,8 +38,8 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securityrole/securityrole.md#security-role-for-codedeploy"
-        > 2. Security Roles</a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securityrole/securityrole.md#security-roles"
+        >  2. Security Roles</a
       >
     </td>
     <td>

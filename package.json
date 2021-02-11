@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:client\"",
+    "setup": "npm run setup:backend && npm run setup:client",
+    "compose:up":"docker-compose up",
+    "test": "npm run test:backend",
+    "test:backend": "cd src/backend && npm run test",
+    "setup:backend": "cd src/backend && npm install",
+    "setup:client": "cd src/client && npm install",
+    "dev:backend": "cd src/backend && npm run dev",
+    "dev:client": "cd src/client && npm run start",
+    "clear:images": "docker rm -f $(docker ps -a -q) && docker rmi -f $(docker images -q)"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "swipe-env": "^0.1.5"
+  }
+}

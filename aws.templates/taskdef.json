@@ -1,0 +1,50 @@
+{
+  "containerDefinitions": [
+    {
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ],
+      "cpu": 0,
+      "environment": [],
+      "memoryReservation": 200,
+      "image": "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/nginx:latest",
+      "essential": true,
+      "links": ["client", "backend"],
+      "name": "nginx"
+    },
+    {
+      "cpu": 0,
+      "environment": [],
+      "memoryReservation": 300,
+      "volumesFrom": [],
+      "image": "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/backend:latest",
+      "essential": false,
+      "name": "backend"
+    },
+    {
+      "cpu": 0,
+      "memoryReservation": 300,
+      "image": "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/client:latest",
+      "essential": false,
+      "name": "client"
+    }
+  ],
+  "compatibilities": ["EC2"],
+  "taskDefinitionArn": "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/$SERVICE_NAME:$SERVICE_VERSION",
+  "family": "$SERVICE_NAME",
+  "requiresAttributes": [
+    {
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+    }
+  ],
+  "requiresCompatibilities": ["EC2"],
+  "revision": 4,
+  "status": "ACTIVE"
+}
