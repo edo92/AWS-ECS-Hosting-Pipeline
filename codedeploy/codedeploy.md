@@ -4,6 +4,7 @@
 <br/>
 
 ### CodeDeploy Setup
+
 - **`In Our Case CodeDeploy has been created when we create ECS Cluster Service.`**\
   **`We can modify CodeDeploy settings by Navigating to AWS CodeDeploy, Click on the Deploy Application`**
   <p>
@@ -21,7 +22,15 @@
   </p>
 
 - **`At the bottom of CodeDeploy Settings change 1 hour to 5 minutes`**\
- **` This will make deployment transfer from original instance to revisition instance in 5 minutes rather than 1 hour`**
-  <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/codedeploy/images/codedeploy-configuration.png"/>
-  </p>
+**` This will make deployment transfer from original instance to revisition instance in 5 minutes rather than 1 hour`**
+ <p>
+   <img src="https://github.com/cyber-netics/testX/blob/main/.assets/codedeploy/images/codedeploy-configuration.png"/>
+ </p>
+
+<br/>
+
+---
+
+<br/>
+
+## Next Up: [Code Pipeline](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/pipeline.md#codepipeline)

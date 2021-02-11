@@ -1,13 +1,15 @@
 # CodePipeline
+
 - AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. You can easily integrate AWS CodePipeline with third-party services such as GitHub or with your own custom plugin.
 
 <br/>
 
 ## Prerequisites
-  - [CodeBuild](https://github.com/cyber-netics/testX/blob/main/.assets/codebuild/codebuild.md#aws-codebuild)
-  - [CodeDeploy](https://github.com/cyber-netics/testX/blob/main/.assets/codedeploy/codedeploy.md#codedeploy)
-  - [ECS Task Definition](https://github.com/cyber-netics/testX/blob/main/.assets/ecs/ecstaskdef.md#ecs-task-definition)
-  - [ECS Cluster Service](https://github.com/cyber-netics/testX/blob/main/.assets/ecs/ecscluster.md#create-cluster)
+
+- [CodeBuild](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codebuild/codebuild.md#aws-codebuild)
+- [CodeDeploy](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codedeploy/codedeploy.md#codedeploy)
+- [ECS Task Definition](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md#ecs-task-definition)
+- [ECS Cluster Service](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#ecs-cluster)
 
 <br/>
 
@@ -17,6 +19,7 @@
 <br/>
 
 ## Steps
+
 <table align="center">
   <tr>
     <th align="center">
@@ -70,6 +73,7 @@
 <br/>
 
 ## Create CodePipeline
+
 - Create Code Pipeline
   <p>
     <img src="https://github.com/cyber-netics/testX/blob/tests/.assets/codepipeline/images/pipeline-create-pipeline.png"/>
@@ -91,18 +95,18 @@
 
 <br/>
 
-- Select CodeBuild as build provide and select codebuild project [that we just created](https://github.com/cyber-netics/testX/blob/tests/.assets/codebuild/codebuild.md)
+- Select CodeBuild as build provide and select codebuild project [that we just created](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codebuild/codebuild.md#aws-codebuild)
   <p>
     <img src="https://github.com/cyber-netics/testX/blob/tests/.assets/codepipeline/images/pipeline-build-stage.png"/>
   </p>
-  
+
 <br/>
 
-- Select ECS(Blue/Green) as deploy provider, 
-- Select CodeDeploy application [that we just created](https://github.com/cyber-netics/testX/blob/tests/.assets/codedeploy/codedeploy.md)
+- Select ECS(Blue/Green) as deploy provider,
+- Select CodeDeploy application [that we just created](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codedeploy/codedeploy.md#codedeploy)
 
 - CodeDeploy Stage, Select ECS(Blue/Green) as deploy provider, deploy App & deploy group
-  Also Select BuildArtifact [taskdef.json](https://github.com/cyber-netics/testX/blob/main/.assets/artifacts/taskdefjson.md) & [appSpec.yml](https://github.com/cyber-netics/testX/blob/main/.assets/artifacts/appSpecyml) which are artifacts in buildspec.yml
+  Also Select BuildArtifact [taskdef.json](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/artifacts/taskdefjson.md#task-definition-template) & [appSpec.yml](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/artifacts/appSpecyml.md#app-spec-yml-is-a-template-that-defines-ecs-claster-service) which are artifacts in buildspec.yml
 
   <p>
     <img src="https://github.com/cyber-netics/testX/blob/main/.assets/codepipeline/images/pipeline-codedeploy-stage.png"/>
