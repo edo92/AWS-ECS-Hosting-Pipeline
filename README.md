@@ -30,7 +30,7 @@
     </td>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securityrole/securityrole.md#security-role-for-codebuild"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securityrole/securityrole.md#security-roles"
         >   1. Security Roles</a
       >
     </td>
@@ -66,7 +66,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/loadbalancer.md#create-load-balancer"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/loadbalancer.md#load-balancer"
         >   4. Create Load Balancer</a
       >
     </td>
