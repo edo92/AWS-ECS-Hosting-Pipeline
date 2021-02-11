@@ -27,7 +27,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/tree/docs/ecsecstaskdef.md#create-ecs-task-definition"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md#create-ecs-task-definition"
         >Create ECS Task Definition</a
       >
       <pre> 1. Create New Task Definition  <br/> 2. Select EC2 Type <br/> 3. Give Task Defin. a name</pre>
@@ -36,7 +36,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/tree/docs/ecsecstaskdef.md#nginx-container"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md#nginx-container"
         >Add Nginx Containers</a
       >
       <pre>  1. Add Container for nginx <br/>  2. give name, add Image URL <br/>  3. memory limit 200 (Soft Limit)  <br/>  4.  Port (0, 80) <br/>  5. Mark Essential <br/>  6. Link: client, backend</pre>
@@ -45,7 +45,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/tree/docs/ecsecstaskdef.md#backend-container"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md.md#backend-container"
         >Add Backend Containers</a
       >
       <pre>  1. Add Container for backend <br/>  2. give name, add Image URL <br/>  3. memory limit 300 (Soft Limit)  <br/>  4.  Dont Add Anyting to Port <br/>  5. UnMark Essential</pre>
@@ -54,7 +54,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/tree/docs/ecsecstaskdef.md#client-container"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md#client-container"
         >Add Client Containers</a
       >
       <pre>  1. Add Container for client <br/>  2. give name, add Image URL <br/>  3. memory limit 300 (Soft Limit)  <br/>  4.  Dont Add Anyting to Port <br/>  5. UnMark Essential</pre>
