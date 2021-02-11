@@ -80,4 +80,4 @@
 <br/>
 <br/>
 
-## [Next Up: Load Balancer](https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/loadbalancer.md#create-load-balancer)
+## [Next Up: Load Balancer](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/loadbalancer.md#load-balancer)

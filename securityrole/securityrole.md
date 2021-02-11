@@ -155,4 +155,4 @@
 
 <br/>
 
-## Next Up: [Security Group](https://github.com/cyber-netics/testX/blob/main/.assets/securitygroup/securitygroup.md#security-security-groups)
+## Next Up: [Security Group](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/securitygroup.md#security-security-groups)

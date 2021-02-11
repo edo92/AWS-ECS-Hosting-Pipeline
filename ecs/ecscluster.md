@@ -303,4 +303,4 @@
 
 <br/>
 
-## [Next Up: Auto Scaling](https://github.com/cyber-netics/testX/blob/main/.assets/autoscaling/autoscaling.md#auto-scaling)
+## [Next Up: Auto Scaling](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/autoscaling/autoscaling.md#auto-scaling)

@@ -192,4 +192,4 @@
 
 <br/>
 
-### [Next up: ECS Cluster/Service](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/tree/docs/ecsecscluster.md)
+### [Next up: ECS Cluster/Service](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#ecs-cluster)
