@@ -7,8 +7,8 @@
 
 ## Prerequisites
 
-- [ECS Security Group](https://github.com/cyber-netics/testX/blob/main/.assets/securitygroup/securitygroup.md#security-security-groups)
-- [VPC](https://github.com/cyber-netics/testX/blob/main/.assets/vpc/vpc.md#aws-vpc-virtual-private-network)
+- [ECS Security Group](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/securitygroup.md#security-security-groups)
+- [VPC](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/vpc/vpc.md#aws-vpc-virtual-private-network)
 
 <br/>
 <br/>

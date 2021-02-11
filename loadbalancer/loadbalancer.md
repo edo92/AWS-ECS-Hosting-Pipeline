@@ -6,8 +6,8 @@
 
 ## Prerequisites
 
-- [VPC](https://github.com/cyber-netics/testX/blob/main/.assets/vpc/vpc.md#aws-vpc-virtual-private-network)
-- [Security Groups](https://github.com/cyber-netics/testX/blob/main/.assets/securitygroup/securitygroup.md#security-security-groups)
+- [VPC](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/vpc/vpc.md#aws-vpc-virtual-private-network)
+- [Security Groups](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/securitygroup.md#security-security-groups)
 
 <br/>
 
@@ -104,7 +104,7 @@
 
 <br/>
 
-- **`Select Load Balancer Security Group `LoadBalancer-SG``**
+- **`Select Load Balancer Security Group` `LoadBalancer-SG`**
   <p>
     <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-security-group.png"/>
   </p>
@@ -159,4 +159,4 @@
 
 <br/>
 
-## Next up: [Create ECS Task Definition](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md#ecs-task-definition)
+## Next up: [ECS Task Definition](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md#ecs-task-definition)

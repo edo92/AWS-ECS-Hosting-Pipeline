@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [VPC](https://github.com/cyber-netics/testX/blob/main/.assets/vpc/vpc.md#aws-vpc-virtual-private-network)
+- [VPC](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/vpc/vpc.md#aws-vpc-virtual-private-network)
 
 <br/>
 

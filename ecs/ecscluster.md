@@ -4,12 +4,12 @@
 
 ### Prerequisites
 
-- [Load Balancer Security Group](https://github.com/cyber-netics/testX/blob/main/.assets/securitygroup/securitygroup.md#load-balancer-security-group)
-- [Load Balancer](https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/loadbalancer.md#load-balancer-configuration)
-- [ECS Security Group](https://github.com/cyber-netics/testX/blob/main/.assets/securitygroup/securitygroup.md#ecs-security-group)
-- [VPC](https://github.com/cyber-netics/testX/blob/main/.assets/vpc/vpc.md#steps)
-- [CodeBuild Security Role](https://github.com/cyber-netics/testX/blob/main/.assets/securityrole/securityrole.md#security-role-for-codebuild)
-- [Task Definition](https://github.com/cyber-netics/testX/blob/main/.assets/ecs/ecstaskdef.md#create-ecs-task-definition)
+- [Load Balancer Security Group](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/securitygroup.md#load-balancer-security-group)
+- [Load Balancer](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/loadbalancer.md#load-balancer)
+- [ECS Security Group](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/securitygroup.md#ecs-security-group)
+- [VPC](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/vpc/vpc.md#aws-vpc-virtual-private-network)
+- [CodeBuild Security Role](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securityrole/securityrole.md#security-role-for-codebuild)
+- [Task Definition](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md#ecs-task-definition)
 
 ---
 
@@ -131,7 +131,7 @@
 
 ### Networking Configuration
 
-- **`Configure Networking, Select`** [VPC that we created](https://github.com/cyber-netics/testX/blob/main/.assets/vpc/vpc.md#steps)\
+- **`Configure Networking, Select`** [VPC that we created](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/vpc/vpc.md#aws-vpc-virtual-private-network)\
   **`Select all Public Networks`**\
   **`Set Auto Assign public ip to Enable`**\
   **`Select Security Group Created in Above Step`**
@@ -191,7 +191,7 @@
 
 - **`ECS Cluster Service Config`**\
   **`Lunch Type: EC2`**\
-  **`Select Task Definition that we created in`** [Task Def. section](https://github.com/cyber-netics/testX/blob/main/.assets/ecs/ecstaskdef.md#ecs-task-definition)\
+  **`Select Task Definition that we created in`** [Task Def. section](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecstaskdef.md#ecs-task-definition)\
   **`Select Cluster that we just created`**\
   **`Give Service name`**\
   **`Number of Tasks to be created: 1`**
