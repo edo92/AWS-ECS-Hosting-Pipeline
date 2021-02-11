@@ -1,4 +1,4 @@
-# Create Load Balancer
+# Load Balancer
 
 - Image result for aws what is load balancer for A load balancer serves as the single point of contact for clients. The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones. This increases the availability of your application. You add one or more listeners to your load balancer.
 
@@ -34,7 +34,7 @@
   <tr>
     <td>
         <a
-          href="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/loadbalancer.md#load-balancer-configuration"
+          href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/loadbalancer.md#load-balancer-configuration"
           >Configure Load Balancer</a
         >
         <pre>  1. Give Name To Load Balancer <br/>  2. Select VPC and All Public Subnets</pre>
@@ -62,14 +62,14 @@
 
 - **`Create Load Balancer In EC2 Section (Naviate AWS to EC2, Select Load Balancer Tab)`**
   <p align="center">
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-dashboard.png" height="450px"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-dashboard.png" height="450px"/>
   </p>
 
 <br/>
 
 - **`Select Load Balancer Type (Application Load Balancer)`**
   <p align="center">
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-type.png" hight="450px"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-type.png" hight="450px"/>
   </p>
 
 <br/>
@@ -78,35 +78,35 @@
 
 - **`Select Name For Load Balancer`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-config.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-config.png"/>
   </p>
 
 <br/>
 
 - **`Select VPC and Availibility Zone, And Public Subnets`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-availibility-zone.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-availibility-zone.png"/>
   </p>
 
 <br/>
 
 - **`Leave Add-on Service with default configs, click next`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-addon.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-addon.png"/>
   </p>
 
 <br/>
 
 - **`HTTPS Warning. Need to create SSL for load balancer. This step we can do latest.`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-ssl-warning.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-ssl-warning.png"/>
   </p>
 
 <br/>
 
 - **`Select Load Balancer Security Group `LoadBalancer-SG``**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-security-group.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-security-group.png"/>
   </p>
 
 <br/>
@@ -115,42 +115,42 @@
 
 - **`Configure Load Balancer Target Group. (Target groups listen to specific port)`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-target-group.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-target-group.png"/>
   </p>
 
 <br/>
 
 - **`Register Targets Leave default, next`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-register-target.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-register-target.png"/>
   </p>
 
 <br/>
 
 - **`Review and Create`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-review.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-review.png"/>
   </p>
 
 <br/>
 
 - **`Successful Creation of load balancer`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-creation-success.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-creation-success.png"/>
   </p>
 
 <br/>
 
 - **`Now we can see Load Balancer has been created`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-listed.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-listed.png"/>
   </p>
 
 <br/>
 
 - **`And we can see Target Group is created`**
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/loadbalancer/images/loadbalancer-target-group-listed.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/loadbalancer/images/loadbalancer-target-group-listed.png"/>
   </p>
 
 <br/>
