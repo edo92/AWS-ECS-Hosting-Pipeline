@@ -6,7 +6,7 @@
 
 # Steps
 
-<table style="padding-top: 15px; padding-bottom: 15px">
+<table>
   <tr>
     <th align="center">
       <img width="441" height="1" />
@@ -24,7 +24,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/vpc/vpc.md"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/vpc/vpc.md#aws-vpc-virtual-private-network"
         >   1. Create VPC</a
       >
     </td>
