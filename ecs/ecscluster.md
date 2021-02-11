@@ -35,14 +35,14 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.mdd#create-cluster"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#create-cluster"
         >Cluster Template</a
       >
       <pre> 1. EC2 Linux + Networking</pre>
     </td>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.mdd#create-service-for-ecs-cluster"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#create-service-for-ecs-cluster"
         >Configure Service</a
       >
       <pre>  1. Select EC2 for Lunch type <br/>  2. Select Task Definition <br/>  3. Select Cluster <br/>  4. Number of Tasks to Run</pre>
@@ -51,14 +51,14 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.mdd#configure-cluster"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#configure-cluster"
         >Configure Cluster</a
       >
       <pre>  1. Name the Cluster <br/>  2. Select Instance Type</pre>
     </td>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.mdd#service-deployment-configuration"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#service-deployment-configuration"
         >Service Deployment</a
       >
       <pre>  1. Select Blue/Green Deployment <br/>  2. Select CodeDeploy Service Role </pre>
@@ -67,14 +67,14 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.mdd#networking-configuration"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#networking-configuration"
         >Network Configuration</a
       >
       <pre>  1. Select VPC and all it's Public networks <br/>  2. Assign Public IP Enabled <br/>  3. Elect ECS Securty Group </pre>
     </td>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.mdd#load-balancer-configuration"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#load-balancer-configuration"
         >Load Balancer</a
       >
       <pre>  1. Select Application Load Balancer <br/>  2. Select AWSServiceRoleForECS IAM Role. <br/>  3. Select Load Balancer</pre>
@@ -83,14 +83,14 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.mdd#ecs-iam-role"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#ecs-iam-role"
         >Container Instance IAM Role</a
       >
       <pre>  1. Select IAM Role, if Doesn't Exist Select Create New</pre>
     </td>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.mdd#container-to-load-balancer"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/ecscluster.md#container-to-load-balancer"
         >Container To Load Balancer</a
       >
       <pre>  1. Container name:port <br/>  2. Add Load Balancer <br/>  3. Production Port 80:HTTP <br/>  4. Select Created LB Target Group  <br/>  5. Create Target Group 2</pre>
