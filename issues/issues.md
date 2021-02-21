@@ -1,5 +1,7 @@
 # Issues
 
+Issues may come up during development and production
+
 <br/>
 <br/>
 
