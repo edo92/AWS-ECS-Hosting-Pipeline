@@ -1,4 +1,4 @@
-### Full Stack Web App Using [React](https://github.com/cyber-netics/testX/tree/main/src/client), [Nodejs](https://github.com/cyber-netics/testX/tree/main/src/backend), [Nginx](https://github.com/cyber-netics/testX/tree/main/src/nginx), Technologies. Host on AWS ECS
+### Full Stack Web App Using [React](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/tree/main/src/client), [Nodejs](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/tree/main/src/backend), [Nginx](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/tree/main/src/nginx), Technologies. Host on AWS ECS
 
 ---
 
@@ -11,7 +11,7 @@
     <th align="center">
       <img width="441" height="1" />
       <p>
-        <small>Hosting</small>
+        <small>Hosting</small>rpt
       </p>
     </th>
     <th align="center">

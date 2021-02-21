@@ -1,0 +1,70 @@
+jobs:
+  backend:
+    docker:
+      - image: cimg/node:15.8.0
+      - image: mongo:4.1.6-xenial
+
+    environment:
+      MONGO_HOST: 0.0.0.0
+
+    steps:
+      - checkout
+      - run:
+          name: Installation depends
+          command: |
+            npm run setup-backend
+
+      - run:
+          name: Test Linting
+          command: |
+            npm run lint-backend
+
+      - run:
+          name: Run Backend Integration Test
+          command: |
+            npm run test-backend
+
+  client:
+    docker:
+      - image: cimg/node:15.8.0
+
+    steps:
+      - checkout
+      - run:
+          name: Installation depends
+          command: |
+            npm run setup-client
+
+      - run:
+          name: Test Linting
+          command: |
+            npm run lint-client
+
+      - run:
+          name: Run Client Integration Test
+          command: |
+            npm run test-client
+
+  lambdas:
+    docker:
+      - image: cimg/node:15.8.0
+
+    steps:
+      - checkout
+      - run:
+          name: Install depends
+          command: |
+            npm run setup-lambdas
+
+      - run:
+          name: Test Linting
+          command: |
+            npm run lint-lambdas
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - backend
+      - client
+      - lambdas
