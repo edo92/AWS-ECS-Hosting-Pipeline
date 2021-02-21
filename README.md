@@ -2,7 +2,7 @@
 
 ---
 
-[![CircleCI](https://circleci.com/gh/cyber-netics/testX.svg?style=shield)](github.com)
+[![CircleCI](https://circleci.com/gh/edo92/AWS-ECS-Hosting-Pipeline.svg?style=shield)](github.com) [https://img.shields.io/badge/license-MIT-green]
 
 <br/>
 
