@@ -32,7 +32,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/cyber-netics/testX/blob/main/.assets/ecs/images/ecs-cluster-service-config.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecs-cluster-service-config.png"
         >Pipeline Settings</a
       >
       <pre> 1. Give Pipeline a Name <br/> 2. Select New Service Role to create role for pipeline</pre>
@@ -41,7 +41,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/cyber-netics/testX/blob/main/.assets/ecs/images/ecs-cluster-service-config.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecs-cluster-service-config.png"
         >Source Stage</a
       >
       <pre> 1. Select Source Provider -> GitHub <br/> 2. Select Respasitory from github <br/> 3. Select Branch (main) </pre>
@@ -50,16 +50,16 @@
   <tr>
     <td>
       <a
-        href="https://github.com/cyber-netics/testX/blob/main/.assets/ecs/images/ecs-cluster-service-config.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecs-cluster-service-config.png"
         >Build Stage</a
       >
-      <pre> 1. Select Build Provider -> CodeBuild <br/> 2. Select CodeBuild Project that we <a href="https://github.com/cyber-netics/testX/blob/main/.assets/codebuild/codebuild.md#create-codebuild">created</a> <br/> 3. Select Branch (main) </pre>
+      <pre> 1. Select Build Provider -> CodeBuild <br/> 2. Select CodeBuild Project that we <a href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codebuild/codebuild.md#create-codebuild">created</a> <br/> 3. Select Branch (main) </pre>
     </td>
   </tr>
   <tr>
     <td>
       <a
-        href="https://github.com/cyber-netics/testX/blob/main/.assets/ecs/images/ecs-cluster-service-config.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecs-cluster-service-config.png"
         >Deploy Stage</a
       >
       <pre> 1. Select Deploy Provider -> ECS (Blue/Green) <br/> 2. Select CodeDeploy Application <br/> 3. Select CodeDeploy Deployment Group <br/> 4. Select BuildArtifact -> taskdef.json  <br/> 5. Select BuildArtifact -> appSpec.yml</pre>
@@ -76,28 +76,28 @@
 
 - Create Code Pipeline
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/tests/.assets/codepipeline/images/pipeline-create-pipeline.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/images/pipeline-create-pipeline.png"/>
   </p>
 
 <br/>
 
 - Pipeline Name and Role
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/tests/.assets/codepipeline/images/pipeline-settings.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/images/pipeline-settings.png"/>
   </p>
 
 <br/>
 
 - Pipeline Source, Connect Github project
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/tests/.assets/codepipeline/images/pipeline-soruce.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/images/pipeline-soruce.png"/>
   </p>
 
 <br/>
 
 - Select CodeBuild as build provide and select codebuild project [that we just created](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codebuild/codebuild.md#aws-codebuild)
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/tests/.assets/codepipeline/images/pipeline-build-stage.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/images/pipeline-build-stage.png"/>
   </p>
 
 <br/>
@@ -109,12 +109,12 @@
   Also Select BuildArtifact [taskdef.json](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/artifacts/taskdefjson.md#task-definition-template) & [appSpec.yml](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/artifacts/appSpecyml.md#app-spec-yml-is-a-template-that-defines-ecs-claster-service) which are artifacts in buildspec.yml
 
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/codepipeline/images/pipeline-codedeploy-stage.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/images/pipeline-codedeploy-stage.png"/>
   </p>
 
 <br/>
 
 - When CodePipeline has been Created it will start building and deploying codebase
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/codepipeline/images/pipeline-porcess-start.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/images/pipeline-porcess-start.png"/>
   </p>
