@@ -20,7 +20,7 @@ CircleCI is a modern continuous integration and continuous delivery (CI/CD) plat
     <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-branch-rules.png"/>
   </p>
 
-- **`Configure branch protection rule`**
+- **`Specify branch (main) and Configure branch protection rule`**
   <p>
     <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-branch-protection-rules.png"/>
   </p>
@@ -29,6 +29,10 @@ CircleCI is a modern continuous integration and continuous delivery (CI/CD) plat
 
 ## Configure Github Webhooks
 
+- **`Edit Github Webhooks`**
+  <p>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-edit-webhooks.png"/>
+  </p>
 - **`This Config makes github to trigger circleci only on pull request`**
   <p>
     <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-webhooks-options-1.png"/>
