@@ -8,9 +8,10 @@
     "esModuleInterop": true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
-    "target": "es5",
-    "module": "es6",
+    "target": "es6",
+    "module": "esnext",
     "strict": true,
-    "jsx": "react"
+    "jsx": "react",
+    "skipLibCheck": true
   }
 }

@@ -1,5 +1,4 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import TerserPlugin from "terser-webpack-plugin";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
 import * as path from "path";
@@ -8,29 +7,38 @@ import * as webpack from "webpack";
 class Settings {
   static entry_file: string = "src/index.tsx";
   static html_template: string = "public/index.html";
-  static ts_config: string = "configs/tsconfig.json";
+  static ts_config: string = "tsconfig.json";
   static output_dir: string = "build";
   static bundlename: string = "[name].[contenthash].bundle.js";
 
   static mode: "development" = "development";
   static devtool: string = "eval-cheap-source-map";
   static extensions: string[] = [".ts", ".tsx", ".js", ".json"];
+  static stats: "errors-only" = "errors-only";
 }
 
 const config: webpack.Configuration = {
   mode: Settings.mode,
+  stats: Settings.stats,
   devtool: Settings.devtool,
-
-  stats: {
-    colors: true,
-  },
 
   devServer: {
     contentBase: path.join(__dirname, Settings.output_dir),
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: "/backend",
+    },
     clientLogLevel: "silent",
     port: 3000,
     hot: true,
+    proxy: {
+      "/backend": {
+        target: "http://localhost:3001",
+        pathRewrite: {
+          "^/backend": "",
+        },
+        changeOrigin: true,
+      },
+    },
   },
 
   output: {
@@ -59,7 +67,6 @@ const config: webpack.Configuration = {
   ],
 
   optimization: {
-    minimizer: [new TerserPlugin()],
     moduleIds: "deterministic",
     runtimeChunk: "single",
     splitChunks: {
@@ -89,6 +96,9 @@ const config: webpack.Configuration = {
               "@babel/preset-env",
               "@babel/preset-react",
               "@babel/preset-typescript",
+            ],
+            plugins: [
+              ["@babel/plugin-transform-runtime", { regenerator: true }],
             ],
           },
         },

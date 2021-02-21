@@ -1,5 +1,4 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import TerserPlugin from "terser-webpack-plugin";
 import * as path from "path";
 import * as webpack from "webpack";
 
@@ -39,7 +38,6 @@ const config: webpack.Configuration = {
 
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin()],
     moduleIds: "deterministic",
     runtimeChunk: "single", // share same code bewteen js files
     splitChunks: {
@@ -64,6 +62,9 @@ const config: webpack.Configuration = {
               "@babel/preset-env",
               "@babel/preset-react",
               "@babel/preset-typescript",
+            ],
+            plugins: [
+              ["@babel/plugin-transform-runtime", { regenerator: true }],
             ],
           },
         },

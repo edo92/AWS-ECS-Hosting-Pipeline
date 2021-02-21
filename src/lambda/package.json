@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "build": "npm install && tsc --p ./configs/tsconfig.prod.json",
+    "test": "jest --config ./configs/jest.config.js",
+    "deploy": "npm run build && bash scripts/deploy_lambda.sh $region",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.848.0"
+  }
+}

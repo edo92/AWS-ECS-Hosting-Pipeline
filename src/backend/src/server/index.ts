@@ -1,27 +1,47 @@
 import express from "express";
-import router from "../routes";
+import routes from "../routes";
+import logger from "../libs/logger";
+import * as middleware from "../helpers/middlewares";
 
-class Server {
+interface IServer {
+  app: express.Application;
+  start: () => void;
+}
+
+class Server implements IServer {
   public app = express.application;
   private port = 3001;
 
   constructor() {
     this.app = express();
-    // this.bodyParser();
-    this.useRouter();
+    this.middlewares();
+    this.parser();
+    this.router();
   }
 
-  private useRouter(): void {
-    this.app.use("/", router);
+  private router(): void {
+    this.app.use("/", routes);
   }
 
-  // private bodyParser(): void {
-  //   this.app.use(express.urlencoded());
-  // }
+  private middlewares(): void {
+    middleware.headers(this.app);
+  }
+
+  private parser(): void {
+    this.app.use(express.json());
+    this.app.use(
+      express.urlencoded({
+        extended: false,
+      })
+    );
+  }
 
   public start(): void {
     this.app.listen(this.port, (): void => {
-      console.log("Server is listening");
+      logger.print({
+        text: `Server is runing on port ${this.port}`,
+        visible: Boolean(process.env.DEV_ENV),
+      });
     });
   }
 }

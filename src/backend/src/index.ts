@@ -1,4 +1,5 @@
 import Server from "./server";
+import Mongdb from "./db";
 
-let server = new Server();
-server.start();
+new Mongdb().connect();
+new Server().start();

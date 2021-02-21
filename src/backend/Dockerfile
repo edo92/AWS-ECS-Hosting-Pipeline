@@ -3,7 +3,7 @@ FROM node:14.15.4 as builder
 WORKDIR /app
 
 COPY . ./
-RUN npm install
+RUN npm install --loglevel=error
 RUN npm run build
 
 
