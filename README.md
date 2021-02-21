@@ -40,6 +40,41 @@
 </table>
 
 <br/>
+
+## Issues
+
+<table align="center">
+  <tr>
+    <th align="center">
+      <img width="441" height="1" />
+      <p>
+        <small>Issues In Development</small>
+      </p>
+    </th>
+    <th align="center">
+      <img width="441" height="1" />
+      <p>
+        <small>Issues In Production</small>
+      </p>
+    </th>
+  </tr>
+  <tr align="center">
+    <td>
+      <a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md"
+        >   1. Docker Compose Slow HTTP Requeset on Mac</a
+      >
+    </td>
+    <td>
+      <a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md"
+        >   1. Issues May Face On Production</a
+      >
+    </td>
+  </tr>
+</table>
+
+<br/>
 <br/>
 
 ## AWS ECS Hosting & Pipeline
@@ -147,30 +182,6 @@
       >
     </td>
     <td>
-    </td>
-  </tr>
-</table>
-
-<br/>
-<br/>
-
-## Issues
-
-<table align="center">
-  <tr>
-    <th align="center">
-      <img width="441" height="1" />
-      <p>
-        <small>Issues In Development</small>
-      </p>
-    </th>
-  </tr>
-  <tr align="center">
-    <td>
-      <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md"
-        >   1. Docker Compose Slow HTTP Requeset on Mac</a
-      >
     </td>
   </tr>
 </table>
