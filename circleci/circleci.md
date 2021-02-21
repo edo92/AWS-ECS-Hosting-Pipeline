@@ -1,4 +1,5 @@
 # CircleCI Integration with GitHub
+
 - CircleCI in this projects is used to run integration testing and linting test
 - It makes sure that broken or bad written code won't get merged in main branch
 
@@ -6,44 +7,47 @@
 <br/>
 
 ## Setup Github
+
 - Add Rule for github branch
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/circleci/images/github-branch-rules.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-branch-rules.png"/>
   </p>
 
 - Configure branch protection rule
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/circleci/images/github-branch-protection-rules.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-branch-protection-rules.png"/>
   </p>
 
 <br/>
 
 ## Configure Github Webhooks
+
 - This Config makes github to trigger circleci only on pull request
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/circleci/images/github-webhooks-options-1.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-webhooks-options-1.png"/>
   </p>
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/circleci/images/github-webhooks-options-2.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-webhooks-options-2.png"/>
   </p>
 
 <br/>
 
 ## CircleCI Setup
+
 - Go to Circleci.com and register
 - After go to projects section and click Set Up Project
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/circleci/images/circleci-setup-project.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/circleci-setup-project.png"/>
   </p>
 
 - Config CIrcleCi, In Projects section click on Project Settings
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/circleci/images/circleci-configure.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/circleci-configure.png"/>
   </p>
 
 - Under Advenced (settings) Change configurations
   <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/circleci/images/circleci-change-configs.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/circleci-change-configs.png"/>
   </p>
 
 - You need to create .circleci directory and config.yml file inside
@@ -61,7 +65,7 @@ jobs:
           name: Installation depends
           command: |
             npm run setup-client
-      
+
       - run:
           name: Test Linting
           command: |
@@ -91,7 +95,6 @@ jobs:
           name: Run Backend Unit Test
           command: |
             npm run test-backend
-
 
 workflows:
   version: 2
