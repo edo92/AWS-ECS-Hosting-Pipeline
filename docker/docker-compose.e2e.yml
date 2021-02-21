@@ -1,0 +1,61 @@
+services:
+  ## Nginx ##
+  nginx:
+    image: nginx_dev
+    container_name: nginx_dev
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ../src/nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - client
+      - backend
+    networks:
+      - proxy
+
+  ## Client ##
+  client:
+    image: client_dev
+    container_name: client
+    restart: on-failure
+    build:
+      context: ../src/client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - proxy
+
+  ## Backend ##
+  backend:
+    image: backend_dev
+    container_name: backend
+    restart: on-failure
+    build:
+      context: ../src/backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+    networks:
+      - proxy
+
+  ## Mongo DB ##
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    environment:
+      - MONGO_HOST=mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    driver: bridge

@@ -1,0 +1,33 @@
+networks:
+  default:
+    external:
+      name: bridge
+
+services:
+  ## Client ##
+  client:
+    image: client_test
+    container_name: client_test
+    restart: on-failure
+    build:
+      context: ../src/client
+      dockerfile: Dockerfile.Test
+    ports:
+      - "3000:3000"
+    networks:
+      - proxy
+
+  ## Backend ##
+  backend:
+    image: backend_test
+    container_name: backend_test
+    restart: on-failure
+    build:
+      context: ../src/backend
+      dockerfile: Dockerfile.Test
+    environment:
+      - MONGO_HOST=mongo
+    ports:
+      - "3001:3001"
+    networks:
+      - proxy
