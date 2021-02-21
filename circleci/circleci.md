@@ -31,7 +31,7 @@ CircleCI is a modern continuous integration and continuous delivery (CI/CD) plat
 
 - **`Edit Github Webhooks`**
   <p>
-    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-edit-webhooks.png" />
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/github-edit-webhooks.PNG" />
   </p>
 - **`This Config makes github to trigger circleci only on pull request`**
   <p>
