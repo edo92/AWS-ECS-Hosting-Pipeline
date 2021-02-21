@@ -7,31 +7,28 @@ phases:
 
   pre_build:
     commands:
-      # Login to aws ECR
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      # Install Test depends
+      - npm install
 
-      # # Install dev depends
-      - npm install -q
+      # Unit/Integrations Test
+      - bash ./scripts/unit_test.sh
 
-      # # Create deployment environment
-      - python ./scripts/prod_deploy.sh $AWS_ACCOUNT_ID $AWS_DEFAULT_REGION
+      # E2E Test
+      - bash ./scripts/e2e_test.sh
 
-      # Build images for testing
-      - docker build -t backend_test -f ./src/backend/Dockerfile.Dev ./src/backend
-      - docker build -t client_test -f ./src/client/Dockerfile.Dev ./src/client
   build:
     commands:
-      # Test images
-      - docker run -e CI=true backend_test
-      - docker run -e CI=true client_test
+      # Build Production Images
+      - bash ./scripts/production_builds.sh
 
-      # Build images for production
-      - docker build -t backend ./src/backend
-      - docker build -t client ./src/client
-      - docker build -t nginx ./src/nginx
+      # Create artifacts
+      - bash ./scripts/create_artifacts.sh $AWS_ACCOUNT_ID $AWS_DEFAULT_REGION
 
   post_build:
     commands:
+      # Login to aws ECR
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+
       # Tag images for ECR
       - docker tag backend $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/backend:latest
       - docker tag client $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/client:latest
@@ -41,6 +38,9 @@ phases:
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/backend:latest
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/client:latest
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/nginx:latest
+
+      # # Update Lambda functions
+      - npm run deploy:lambda $AWS_DEFAULT_REGION
 
 artifacts:
   name: artifacts

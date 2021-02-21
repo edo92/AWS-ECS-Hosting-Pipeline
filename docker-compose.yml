@@ -1,39 +1,27 @@
-version: "3.3"
+version: "2.2"
 services:
   ## Nginx ##
   nginx:
     image: nginx:latest
-    restart: always # because it is routing traffic to our entire app
+    container_name: nginx
+    restart: always
     build:
       dockerfile: Dockerfile
       context: ./src/nginx
-    ports:
-      - "80:80"
-    links:
-      - client
-      - backend
-    depends_on:
-      - client
-      - backend
 
   ## Client ##
   client:
     image: client:latest
+    container_name: client
+    restart: on-failure
     build:
       context: ./src/client
       dockerfile: Dockerfile
-    restart: on-failure
-    container_name: client
-    ports:
-      - "3000:3000"
 
   ## Backend ##
   backend:
     image: backend:latest
+    restart: on-failure
     build:
       context: ./src/backend
       dockerfile: Dockerfile
-    restart: on-failure
-    container_name: backend
-    ports:
-      - "3001:3001"
