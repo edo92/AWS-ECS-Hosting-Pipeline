@@ -39,8 +39,6 @@
   </tr>
 </table>
 
-<br/>
-
 ## Issues
 
 <table align="center">
