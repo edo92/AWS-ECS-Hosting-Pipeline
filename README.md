@@ -26,13 +26,13 @@
   <tr align="center">
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/usage/usage.md"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/usage/usage.md#development-environment"
         >   1. Development Environment</a
       >
     </td>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/usage/usage.md"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/usage/usage.md#production-environment"
         >   1. Production Environment</a
       >
     </td>
