@@ -2,6 +2,8 @@
 
 CircleCI is a modern continuous integration and continuous delivery (CI/CD) platform. The CircleCI Enterprise solution is installable inside your private cloud or data center and is free to try for a limited time. CircleCI automates build, test, and deployment of software.
 
+---
+
 <br/>
 <br/>
 
@@ -9,8 +11,6 @@ CircleCI is a modern continuous integration and continuous delivery (CI/CD) plat
 
 - CircleCI in this projects is used to run integration testing and linting test
 - It makes sure that broken or bad written code won't get merged in main branch
-
----
 
 <br/>
 <br/>
