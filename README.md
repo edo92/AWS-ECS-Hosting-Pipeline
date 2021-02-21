@@ -1,10 +1,13 @@
-### Full Stack Web App Using [React](https://github.com/cyber-netics/testX/tree/main/src/client), [Nodejs](https://github.com/cyber-netics/testX/tree/main/src/backend), [Nginx](https://github.com/cyber-netics/testX/tree/main/src/nginx), Technologies. Host on AWS ECS
-
----
-
 [![CircleCI](https://circleci.com/gh/edo92/AWS-ECS-Hosting-Pipeline.svg?style=shield)](github.com)
 [![CircleCI](https://img.shields.io/badge/license-MIT-green?style=shield)](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/main/LICENSE)
 [![CircleCI](https://img.shields.io/badge/version-v1.0.0-green?style=shield)]()
+
+<br/>
+<br/>
+
+### Full Stack Web App Using [React](https://github.com/cyber-netics/testX/tree/main/src/client), [Nodejs](https://github.com/cyber-netics/testX/tree/main/src/backend), [Nginx](https://github.com/cyber-netics/testX/tree/main/src/nginx), Technologies. Host on AWS ECS
+
+---
 
 <br/>
 
