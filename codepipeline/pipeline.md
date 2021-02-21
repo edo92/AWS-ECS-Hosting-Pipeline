@@ -32,7 +32,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/pipeline.md#create-codepipeline"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/pipeline.md#pipeline-settings"
         >Pipeline Settings</a
       >
       <pre> 1. Give Pipeline a Name <br/> 2. Select New Service Role to create role for pipeline</pre>
@@ -41,7 +41,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecs-cluster-service-config.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/pipeline.md#pipeline-source-stage"
         >Source Stage</a
       >
       <pre> 1. Select Source Provider -> GitHub <br/> 2. Select Respasitory from github <br/> 3. Select Branch (main) </pre>
@@ -50,7 +50,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecs-cluster-service-config.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/pipeline.md#pipeline-build-stage"
         >Build Stage</a
       >
       <pre> 1. Select Build Provider -> CodeBuild <br/> 2. Select CodeBuild Project that we <a href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codebuild/codebuild.md#create-codebuild">created</a> <br/> 3. Select Branch (main) </pre>
@@ -59,7 +59,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecs-cluster-service-config.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/pipeline.md#pipeline-deploy-stage"
         >Deploy Stage</a
       >
       <pre> 1. Select Deploy Provider -> ECS (Blue/Green) <br/> 2. Select CodeDeploy Application <br/> 3. Select CodeDeploy Deployment Group <br/> 4. Select BuildArtifact -> taskdef.json  <br/> 5. Select BuildArtifact -> appSpec.yml</pre>
@@ -81,7 +81,7 @@
 
 <br/>
 
-### Pipeline Settings
+#### Pipeline Settings
 
 - Pipeline Name and Role
   <p>
@@ -99,7 +99,7 @@
 
 <br/>
 
-### Pipeline Build Stage
+#### Pipeline Build Stage
 
 - Select CodeBuild as build provide and select codebuild project [that we just created](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codebuild/codebuild.md#aws-codebuild)
   <p>
@@ -108,7 +108,7 @@
 
 <br/>
 
-### Pipeline Deploy Stage
+#### Pipeline Deploy Stage
 
 - Select ECS(Blue/Green) as deploy provider,
 - Select CodeDeploy application [that we just created](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codedeploy/codedeploy.md#codedeploy)
