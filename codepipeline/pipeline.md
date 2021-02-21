@@ -32,7 +32,7 @@
   <tr>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecs-cluster-service-config.png"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/pipeline.md#create-codepipeline"
         >Pipeline Settings</a
       >
       <pre> 1. Give Pipeline a Name <br/> 2. Select New Service Role to create role for pipeline</pre>
@@ -81,12 +81,16 @@
 
 <br/>
 
+### Pipeline Settings
+
 - Pipeline Name and Role
   <p>
     <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/images/pipeline-settings.png"/>
   </p>
 
 <br/>
+
+#### Pipeline Source Stage
 
 - Pipeline Source, Connect Github project
   <p>
@@ -95,12 +99,16 @@
 
 <br/>
 
+### Pipeline Build Stage
+
 - Select CodeBuild as build provide and select codebuild project [that we just created](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codebuild/codebuild.md#aws-codebuild)
   <p>
     <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codepipeline/images/pipeline-build-stage.png"/>
   </p>
 
 <br/>
+
+### Pipeline Deploy Stage
 
 - Select ECS(Blue/Green) as deploy provider,
 - Select CodeDeploy application [that we just created](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/codedeploy/codedeploy.md#codedeploy)
