@@ -10,6 +10,8 @@ CircleCI is a modern continuous integration and continuous delivery (CI/CD) plat
 - CircleCI in this projects is used to run integration testing and linting test
 - It makes sure that broken or bad written code won't get merged in main branch
 
+---
+
 <br/>
 <br/>
 
@@ -60,6 +62,9 @@ CircleCI is a modern continuous integration and continuous delivery (CI/CD) plat
   <p>
     <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/circleci/images/circleci-change-configs.png"/>
   </p>
+
+<br/>
+<br/>
 
 - **`You need to create .circleci directory and config.yml file inside`**
 - **`Config yml file is the instructions how to run your tests (in your case test only, but it can be bundle, build, test setps)`**
