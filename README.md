@@ -4,7 +4,7 @@
 
 [![CircleCI](https://circleci.com/gh/edo92/AWS-ECS-Hosting-Pipeline.svg?style=shield)](github.com)
 [![CircleCI](https://img.shields.io/badge/license-MIT-green?style=shield)](https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/main/LICENSE)
-[![CircleCI](https://img.shields.io/badge/cdnjs-v1.0.0-blue?style=shield)]()
+[![CircleCI](https://img.shields.io/badge/version-v1.0.0-green?style=shield)]()
 
 <br/>
 
