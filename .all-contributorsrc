@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "edo92",
+      "name": "Eduard Jacobs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33237305?s=400&u=9add80378cc1238ad19d4c8ebf9cf409f77b649a&v=4",
+      "profile": "https://github.com/edo92",
+      "contributions": [
+        "code",
+        "content"
+      ]
+    },
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "AWS-ECS-Hosting-Pipeline",
+  "projectOwner": "Eduard Jacobs",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
