@@ -221,7 +221,6 @@ Thanks to all contributors ([emoji key](https://github.com/edo92/AWS-ECS-Hosting
       >
       <a href="#content-edo92" title="Content">🖋</a>
     </td>
-
     <td align="center">
       <a href="https://github.com/cyber-netics"
         ><img
