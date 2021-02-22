@@ -193,3 +193,53 @@
     </td>
   </tr>
 </table>
+
+<br/>
+<br/>
+
+## Contributors ✨
+
+Thanks to all contributors ([emoji key](https://github.com/edo92/AWS-ECS-Hosting-Pipeline#Contributors)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/edo92"
+        ><img
+          src="https://avatars.githubusercontent.com/u/33237305?s=400&u=9add80378cc1238ad19d4c8ebf9cf409f77b649a&v=4"
+          width="100px;"
+          alt=""
+        /><br /><sub><b>edo92</b></sub></a
+      ><br /><a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/commits?author=edo92"
+        title="Code"
+        >💻</a
+      >
+      <a href="#content-edo92" title="Content">🖋</a>
+    </td>
+
+    <td align="center">
+      <a href="https://github.com/cyber-netics"
+        ><img
+          src="https://avatars.githubusercontent.com/u/67401984?s=400&v=4"
+          width="100px;"
+          alt=""
+        /><br /><sub><b>cyber-netics</b></sub></a
+      ><br /><a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/commits?author=cyber-netics"
+        title="Code"
+        >💻</a
+      >
+      <a href="#content-cyber-netics" title="Content">🖋</a>
+    </td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
