@@ -3,6 +3,12 @@
 [![Version](https://img.shields.io/badge/version-v1.0.0-1abc9c?style=shield)](https://github.com/edo92/AWS-ECS-Hosting-Pipeline)
 [![Contribution](https://img.shields.io/badge/contributions-welcome-red.svg?style=shield)](https://github.com/edo92/AWS-ECS-Hosting-Pipeline)
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 <br/>
 <br/>
 
