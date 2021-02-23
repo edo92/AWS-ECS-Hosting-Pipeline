@@ -178,7 +178,7 @@
     </td>
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/lambda/lambda.md"
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/lambda/lambda.md#lambda-pipeline-notification"
         >   6. Lambda in Pipeline</a
       >
     </td>
