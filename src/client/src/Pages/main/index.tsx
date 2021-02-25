@@ -1,16 +1,20 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import axios from "axios";
 
-type IEventChange = React.ChangeEvent<HTMLInputElement>;
+// Redux Actions
+import { setname } from "../../Store/actions/getname";
 
-interface IProps {
-  test?: string;
-}
-
-interface IState {
-  username?: string;
-  data: string;
-}
+// Ifaces & Types
+import {
+  IProps,
+  IState,
+  EventChangeType,
+  IReduxDispatch,
+  IDispatchProps,
+  IStateProps,
+  IReduxState,
+} from "./types";
 
 class MainPage extends Component<IProps, IState> {
   async componentDidMount() {
@@ -23,14 +27,17 @@ class MainPage extends Component<IProps, IState> {
   }
 
   async handleClick() {
-    await axios.post("/backend/createuser", {
-      userForm: {
-        name: this.state.username,
-      },
-    });
+    if (this.state.username?.trim().length) {
+      this.props.setName(this.state.username);
+      await axios.post("/backend/createuser", {
+        userForm: {
+          name: this.state.username,
+        },
+      });
+    }
   }
 
-  handleInputUsername(event: IEventChange) {
+  handleInputUsername(event: EventChangeType) {
     this.setState({
       username: event.target.value,
     });
@@ -39,7 +46,7 @@ class MainPage extends Component<IProps, IState> {
   render() {
     return (
       <div>
-        <div>Hello world xxxxx!</div>
+        <div>{this.props.name}</div>
         <input
           style={{ width: "200px" }}
           onChange={this.handleInputUsername.bind(this)}
@@ -51,4 +58,16 @@ class MainPage extends Component<IProps, IState> {
   }
 }
 
-export default MainPage;
+const mapStateToProps = (state: IReduxState): IStateProps => {
+  return {
+    name: state.app.name,
+  };
+};
+
+const mapDispatchToProsp = (dispatch: IReduxDispatch): IDispatchProps => {
+  return {
+    setName: (name: string) => dispatch(setname(name)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProsp)(MainPage);
