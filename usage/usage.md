@@ -2,7 +2,7 @@
 
 ### Development Environment
 - **Setup Environmental Variables**
-    - Add .env files in backend (/src/backend) with
+    - Add `.env` files in backend  
     ```
     MONGO_URI=mongodb://localhost/myapp
     ```
