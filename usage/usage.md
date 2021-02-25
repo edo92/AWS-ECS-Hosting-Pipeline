@@ -1,9 +1,15 @@
 ## Code Base Usage
 
 ### Development Environment
+- **Setup Environmental Variables**
+    - Add .env files in backend (/src/backend) with
+    ```
+    MONGO_URI=mongodb://localhost/myapp
+    ```
 
-- install dependencies for client & backend
+<br/>
 
+- **install dependencies for client & backend**
 ```
 npm run setup
 ```
