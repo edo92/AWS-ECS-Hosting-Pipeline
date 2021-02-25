@@ -1,7 +1,7 @@
 import express from "express";
 import routes from "../routes";
 import logger from "../libs/logger";
-import * as middleware from "../helpers/middlewares";
+import middleware from "../helpers/middlewares";
 
 interface IServer {
   app: express.Application;
@@ -15,20 +15,12 @@ class Server implements IServer {
   constructor() {
     this.app = express();
     this.middlewares();
-    this.parser();
-    this.router();
-  }
-
-  private router(): void {
     this.app.use("/", routes);
   }
 
   private middlewares(): void {
-    middleware.headers(this.app);
-  }
-
-  private parser(): void {
     this.app.use(express.json());
+    this.app.use(middleware);
     this.app.use(
       express.urlencoded({
         extended: false,
