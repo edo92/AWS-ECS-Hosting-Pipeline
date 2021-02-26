@@ -6,7 +6,8 @@ import mocks from "../mocks/user_mock.json";
 const server = new Server();
 const request = supertest(server.app);
 
-const uri = `mongodb://${process.env.MONGO_HOST}/mayapp`;
+const host = process.env.MONGO_HOST || "localhost";
+const uri = `mongodb://${host}/mayapp`;
 
 beforeAll(async () => {
   await mongoose.connect(uri, {

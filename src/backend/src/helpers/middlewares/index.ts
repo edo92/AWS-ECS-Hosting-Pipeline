@@ -4,7 +4,7 @@ type Req = express.Request;
 type Res = express.Response;
 type Next = express.NextFunction;
 
-const headers = (_: Req, res: Res, next: Next) => {
+const headers = (_: Req, res: Res, next: Next): void => {
   res.setHeader("Access-Control-Allow-Origin", "*");
 
   res.setHeader(
