@@ -29,7 +29,8 @@
     "setup-backend": "cd src/backend && npm install --no-package-lock",
     "setup-lambdas": "cd src/lambda && npm install --no-package-lock",
     "setup": "npm install && npm run setup-client && npm run setup-backend",
-    "deploy:lambda": "cd src/lambda && npm run deploy $region"
+    "deploy:lambda": "cd src/lambda && npm run deploy $region",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "concurrently": "^5.3.0",

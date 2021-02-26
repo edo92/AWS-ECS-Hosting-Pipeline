@@ -9,20 +9,22 @@ interface IActoin {
   name?: string;
   username?: string;
   age?: string;
+  users: string[];
 }
 
 const initialState = {
   name: "Hello World",
   username: "",
   age: "",
+  users: [],
 };
 
 const user = (state: IState = initialState, action: IActoin) => {
   switch (action.type) {
-    case "SET_NAME": {
+    case "SET_USERS": {
       return {
         ...state,
-        name: action.name,
+        users: action.users,
       };
     }
 

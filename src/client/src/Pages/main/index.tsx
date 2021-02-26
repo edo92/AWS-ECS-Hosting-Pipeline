@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import axios from "axios";
 
 // Redux Actions
-import { setname } from "../../Store/actions/getname";
+import { getUsers, createUser } from "../../Store/actions/getname";
 
 // Ifaces & Types
 import {
@@ -14,32 +13,23 @@ import {
   IDispatchProps,
   IStateProps,
   IReduxState,
+  IUserObj,
 } from "./types";
 
 class MainPage extends Component<IProps, IState> {
-  async componentDidMount() {
-    await this.getInitialData();
+  componentDidMount() {
+    this.props.getUsers();
   }
 
-  async getInitialData() {
-    const res = await axios.get("/backend/getusers");
-    this.setState({ data: res.data });
-  }
-
-  async handleClick() {
-    if (this.state.username?.trim().length) {
-      this.props.setName(this.state.username);
-      await axios.post("/backend/createuser", {
-        userForm: {
-          name: this.state.username,
-        },
-      });
+  handleClick(): void {
+    if (this.state.name?.trim().length) {
+      this.props.createUser(this.state.name);
     }
   }
 
-  handleInputUsername(event: EventChangeType) {
+  handleInputUsername(event: EventChangeType): void {
     this.setState({
-      username: event.target.value,
+      name: event.target.value,
     });
   }
 
@@ -52,7 +42,14 @@ class MainPage extends Component<IProps, IState> {
           onChange={this.handleInputUsername.bind(this)}
           placeholder="Input Your Username"
         />
-        <button onClick={this.handleClick.bind(this)}>Submit</button>
+        <button id="mybutton" onClick={this.handleClick.bind(this)}>
+          Submit
+        </button>
+        <div>
+          {this.props.users.map((user: IUserObj, i: number) => {
+            return <div key={i}>{user.name}</div>;
+          })}
+        </div>
       </div>
     );
   }
@@ -61,12 +58,14 @@ class MainPage extends Component<IProps, IState> {
 const mapStateToProps = (state: IReduxState): IStateProps => {
   return {
     name: state.app.name,
+    users: state.app.users,
   };
 };
 
 const mapDispatchToProsp = (dispatch: IReduxDispatch): IDispatchProps => {
   return {
-    setName: (name: string) => dispatch(setname(name)),
+    getUsers: () => dispatch(getUsers()),
+    createUser: (name: string) => dispatch(createUser(name)),
   };
 };
 
