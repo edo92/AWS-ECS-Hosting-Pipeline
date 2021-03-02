@@ -13,77 +13,16 @@
 
 <br/>
 
-## Usage
 
-<table align="center">
-  <tr>
-    <th align="center">
-      <img width="441" height="1" />
-      <p>
-        <small>Development Environemtn Usage</small>
-      </p>
-    </th>
-    <th align="center">
-      <img width="441" height="1" />
-      <p>
-        <small>Production Environemtn Usage</small>
-      </p>
-    </th>
-  </tr>
-  <tr align="center">
-    <td>
-      <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/usage/usage.md#development-environment"
-        >   1. Development Environment</a
-      >
-    </td>
-    <td>
-      <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/usage/usage.md#production-environment"
-        >   1. Production Environment</a
-      >
-    </td>
-  </tr>
-</table>
-
-## Issues
-
-<table align="center">
-  <tr>
-    <th align="center">
-      <img width="441" height="1" />
-      <p>
-        <small>Issues In Development</small>
-      </p>
-    </th>
-    <th align="center">
-      <img width="441" height="1" />
-      <p>
-        <small>Issues In Production</small>
-      </p>
-    </th>
-  </tr>
-  <tr align="center">
-    <td>
-      <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md#development"
-        >   1. Docker Compose Slow HTTP Requeset on Mac</a
-      >
-    </td>
-    <td>
-      <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md#production"
-        >   1. Issues May Face On Production</a
-      >
-    </td>
-  </tr>
-</table>
+## Architecture
+  <p align="center">
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/architectur-schema.png"/>
+  </p>
 
 <br/>
 <br/>
 
 ## AWS ECS Hosting & Pipeline
-
 <table>
   <tr>
     <th align="center">
@@ -191,6 +130,76 @@
       >
     </td>
     <td>
+    </td>
+  </tr>
+</table>
+  
+<br/>
+<br/>
+
+
+## Usage
+
+<table align="center">
+  <tr>
+    <th align="center">
+      <img width="441" height="1" />
+      <p>
+        <small>Development Environemtn Usage</small>
+      </p>
+    </th>
+    <th align="center">
+      <img width="441" height="1" />
+      <p>
+        <small>Production Environemtn Usage</small>
+      </p>
+    </th>
+  </tr>
+  <tr align="center">
+    <td>
+      <a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/usage/usage.md#development-environment"
+        >   1. Development Environment</a
+      >
+    </td>
+    <td>
+      <a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/usage/usage.md#production-environment"
+        >   1. Production Environment</a
+      >
+    </td>
+  </tr>
+</table>
+
+## Issues
+
+<table align="center">
+  <tr>
+    <th align="center">
+      <img width="441" height="1" />
+      <p>
+        <small>Issues In Development</small>
+      </p>
+    </th>
+    <th align="center">
+      <img width="441" height="1" />
+      <p>
+        <small>Issues In Production</small>
+      </p>
+    </th>
+  </tr>
+  <tr align="center">
+    <td>
+      <a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md#development"
+        >   1. Docker Compose Slow HTTP Requeset on Mac</a
+      >
+    </td>
+    <td>
+      <a
+        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md#production"
+        >   1. Issues May Face On Production</a
+      >
     </td>
   </tr>
 </table>
