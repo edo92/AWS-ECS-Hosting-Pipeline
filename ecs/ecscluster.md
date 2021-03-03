@@ -160,15 +160,8 @@
   </p>
 
 - **`After Creating Cluster AWS Created ecsInstanceRole in IAM, We Need To Attach extra Roles`**
-  <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/securityrole/images/ecs-cluster-role-list.png"/>
-  </p>
-
-- **`1. AmazonS3FullAccess`**\
-  **`2. AmazonECS_FullAccess`**
-  <p>
-    <img src="https://github.com/cyber-netics/testX/blob/main/.assets/securityrole/images/security-role-ecs-roles.png"/>
-  </p>
+    - **`1. AmazonS3FullAccess`**\
+    - **`2. AmazonECS_FullAccess`**
 
 <br/>
 
