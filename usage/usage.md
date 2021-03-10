@@ -1,6 +1,13 @@
 ## Code Base Usage
 
 ### Development Environment
+- **Windows bash setup**
+    ```
+    npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
+    ```
+
+<br/>
+
 - **Setup Environmental Variables. Add `.env` files in backend**
     ```
     MONGO_URI=mongodb://localhost/myapp
