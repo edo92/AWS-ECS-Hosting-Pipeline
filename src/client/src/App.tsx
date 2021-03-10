@@ -10,12 +10,10 @@ const App: React.FC = () => {
 
   return (
     <Router history={history}>
-      <div>
-        <Switch>
-          <Route exact path="/" component={MainPage} />
-          <Route exact path="/dashboard" component={DashboardPage} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" component={MainPage} />
+        <Route exact path="/dashboard" component={DashboardPage} />
+      </Switch>
     </Router>
   );
 };
