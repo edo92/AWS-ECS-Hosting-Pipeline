@@ -3,8 +3,8 @@
 [![Version](https://img.shields.io/badge/version-v1.0.0-1abc9c?style=shield)](https://github.com/edo92/AWS-ECS-Hosting-Pipeline)
 [![Contribution](https://img.shields.io/badge/contributions-welcome-red.svg?style=shield)](https://github.com/edo92/AWS-ECS-Hosting-Pipeline)
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=shield)](#contributors)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/edo92/AWS-ECS-Hosting-Pipeline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/edo92/AWS-ECS-Hosting-Pipeline/alerts/)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/edo92/AWS-ECS-Hosting-Pipeline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/edo92/AWS-ECS-Hosting-Pipeline/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/edo92/AWS-ECS-Hosting-Pipeline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/edo92/AWS-ECS-Hosting-Pipeline/context:javascript)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/edo92/AWS-ECS-Hosting-Pipeline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/edo92/AWS-ECS-Hosting-Pipeline/context:javascript)
 
 <br/>
 <br/>
