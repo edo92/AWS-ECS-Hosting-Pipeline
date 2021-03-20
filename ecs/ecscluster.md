@@ -189,10 +189,10 @@
   **`Give Service name`**\
   **`Number of Tasks to be created: 1`**
     <p align="center">
-    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecscluster/ecs-cluster-service-config-lunchtype.png" height="550px"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecscluster/ecs-cluster-service-config-lunchtype.png"/>
   </p>
   <p align="center">
-    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecscluster/ecs-cluster-service-config.png" height="550px"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/ecs/images/ecscluster/ecs-cluster-service-config.png"/>
   </p>
 
 <br/>
