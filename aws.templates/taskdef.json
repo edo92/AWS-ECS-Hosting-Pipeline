@@ -34,8 +34,8 @@
     }
   ],
   "compatibilities": ["EC2"],
-  "taskDefinitionArn": "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/$SERVICE_NAME:$SERVICE_VERSION",
-  "family": "$SERVICE_NAME",
+  "taskDefinitionArn": "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/$TASK_DEF_NAME:$TASK_DEF_VERSION",
+  "family": "$TASK_DEF_NAME",
   "requiresAttributes": [
     {
       "name": "com.amazonaws.ecs.capability.ecr-auth"

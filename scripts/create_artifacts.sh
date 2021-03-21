@@ -7,8 +7,7 @@ set -e
 #============= Environmental Variables =============
 export AWS_ACCOUNT_ID=$1
 export AWS_DEFAULT_REGION=$2
-export CONTAINER_NAME="MyApp-Task-Def"
-export SERVICE_NAME="MyApp-Service"
+export TASK_DEF_NAME="MyApp-Task-Def"
 export CONTAINER_PORT=80
 
 
