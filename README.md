@@ -209,9 +209,6 @@
 <br/>
 
 ## Contributors ✨
-
-Thanks to all contributors ([emoji key](https://github.com/edo92/AWS-ECS-Hosting-Pipeline#Contributors)):
-
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
