@@ -64,7 +64,7 @@
 - **`In VPC Create Security group for Load Balancer`**\
 **` Make port 80 accessible to everywhere, which will be url to the website through load balancer`**
   <p>
-   <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/images/security-group-loadbalancer.png"/>
+   <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/images/sg-loadbalancer.png"/>
  </p>
 
 <br/>
@@ -74,7 +74,7 @@
 - **`Create Security Group for ECS`**\
   **`Specify Port rage (32768-65535) and select load balancer. we will access ECS through load balancer`**
   <p>
-    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/images/security-group-ecs.png"/>
+    <img src="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/securitygroup/images/sg-ecs.png"/>
   </p>
 
 <br/>
